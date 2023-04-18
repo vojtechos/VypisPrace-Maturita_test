@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maturitnipojebanyhovno.EditController">
+   <children>
+      <DatePicker fx:id="datePicker" layoutX="219.0" layoutY="90.0" prefHeight="33.0" prefWidth="162.0" />
+      <Label layoutX="219.0" layoutY="65.0" prefHeight="25.0" prefWidth="162.0" text="Select Date:" />
+      <Label layoutX="219.0" layoutY="140.0" prefHeight="25.0" prefWidth="162.0" text="Select time from:" />
+      <Label layoutX="219.0" layoutY="216.0" prefHeight="25.0" prefWidth="162.0" text="Select time to:" />
+      <HBox layoutX="219.0" layoutY="165.0" prefHeight="33.0" prefWidth="162.0" spacing="10.0">
+         <children>
+            <TextField fx:id="fromTimeHours" prefHeight="33.0" prefWidth="110.0" />
+            <TextField fx:id="fromTimeMinutes" layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="110.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="220.0" layoutY="241.0" prefHeight="33.0" prefWidth="162.0" spacing="10.0">
+         <children>
+            <TextField fx:id="toTimeHours" prefHeight="33.0" prefWidth="110.0" />
+            <TextField fx:id="toTimeMinutes" layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="110.0" />
+         </children>
+      </HBox>
+      <Button fx:id="submitButton" layoutX="263.0" layoutY="318.0" mnemonicParsing="false" onKeyPressed="#onEnter" onMouseClicked="#submitButton" prefHeight="25.0" prefWidth="77.0" text="Submit" />
+      <Label fx:id="warning" layoutX="264.0" layoutY="357.0" prefHeight="25.0" prefWidth="77.0" />
+   </children>
+</AnchorPane>

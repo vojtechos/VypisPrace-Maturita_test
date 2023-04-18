@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maturitnipojebanyhovno.MainController">
+   <children>
+      <TableView fx:id="tableView" layoutX="39.0" layoutY="74.0" prefHeight="280.0" prefWidth="423.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="125" text="Date" />
+          <TableColumn fx:id="timeFromColumn" prefWidth="150.0" text="Time from" />
+          <TableColumn fx:id="timeToColumn" prefWidth="147.0" text="Time to" />
+        </columns>
+      </TableView>
+      <HBox layoutX="39.0" layoutY="373.0" prefHeight="32.0" prefWidth="593.0">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onMouseClicked="#onAdd" prefHeight="31.0" prefWidth="125.0" text="Add" />
+            <Button fx:id="EditButton" mnemonicParsing="false" onMouseClicked="#onEdit" prefHeight="31.0" prefWidth="125.0" text="Edit" />
+            <Button mnemonicParsing="false" onMouseClicked="#onDelete" prefHeight="32.0" prefWidth="125.0" text="Delete" />
+            <Button fx:id="refreshTableViewButton" mnemonicParsing="false" onMouseClicked="#onRefresh" prefHeight="31.0" prefWidth="125.0" text="Refresh tableView" />
+            <Button mnemonicParsing="false" onMouseClicked="#showTimeWorked" prefHeight="32.0" prefWidth="125.0" text="Time worked" />
+         </children>
+      </HBox>
+      <VBox layoutX="483.0" layoutY="74.0" prefHeight="280.0" prefWidth="148.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="154.0" text="Days:" textAlignment="CENTER" />
+            <Label fx:id="daysCounter" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="148.0" text="count:" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="154.0" text="Hours:" textAlignment="CENTER" />
+            <Label fx:id="hoursCounter" alignment="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="32.0" prefWidth="148.0" text="count:" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
